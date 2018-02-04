@@ -11,6 +11,12 @@ import { ThirdQuestionComponent } from './components/questions/third-question/th
 import { ForthQuestionComponent } from './components/questions/forth-question/forth-question.component';
 import { FifthQuestionComponent } from './components/questions/fifth-question/fifth-question.component';
 import { SixthQuestionComponent } from './components/questions/sixth-question/sixth-question.component';
+import { ZipCodeComponent } from './components/continue/zip-code/zip-code.component';
+import { BirthComponent } from './components/continue/birth/birth.component';
+import { PhoneNumberComponent } from './components/continue/phone-number/phone-number.component';
+import { NameComponent } from './components/continue/name/name.component';
+import { EmailComponent } from './components/continue/email/email.component';
+
 
 const appRoutes: Routes = [
   { path: 'continue', component: ContinueComponent },
@@ -29,7 +35,12 @@ const appRoutes: Routes = [
     ThirdQuestionComponent,
     ForthQuestionComponent,
     FifthQuestionComponent,
-    SixthQuestionComponent
+    SixthQuestionComponent,
+    ZipCodeComponent,
+    BirthComponent,
+    PhoneNumberComponent,
+    NameComponent,
+    EmailComponent,
   ],
   imports: [
     BrowserModule,

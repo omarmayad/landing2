@@ -13,9 +13,9 @@ export class QuestionsComponent implements OnInit {
   currentQuestion=this.questionsList[this.index]; 
   AllTheSelectedOptions=[] ;
   percentage=0;
-  currentColor ="#303066";
+  
   constructor(private router :Router){
-    this.currentColor= localStorage.getItem('Color');
+    
   }
   ngOnInit() {
   }

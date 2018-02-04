@@ -24,7 +24,7 @@ body {
   .page-header {
     margin: 0 auto;
     padding: 15px 0;
-    background-color: #333366;
+    background-color:gray;
     color: #fff;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px; }

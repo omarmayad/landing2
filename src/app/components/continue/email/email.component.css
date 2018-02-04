@@ -1,0 +1,19 @@
+p{
+    text-align: left;
+    line-height: 11px;
+   font-size: 0.6em;
+   border: 1px solid #8a8a8a;
+   ;
+   border-radius: 8px;
+   margin: 1px;
+
+}
+#checkboxButton{
+    margin: 25px auto;
+    width: auto;
+
+}
+#check{
+    width: 20px;
+    margin: 25px auto;
+}

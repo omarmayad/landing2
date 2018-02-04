@@ -7,11 +7,32 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./continue.component.css']
 })
 export class ContinueComponent implements OnInit {
-  currentColor="";
-  constructor(){
-    this.currentColor= localStorage.getItem('Color');
+  inputsList:any=["FirstInput","SecondInput","ThirdInput",
+  "ForthInput","FifthInput" ];
+  index = 0;
+  currentInput=this.inputsList[this.index]; 
+  AllTheSelectedInputs=[] ;
+  percentage=0;
+  
+  constructor(private router :Router){
+    
   }
   ngOnInit() {
+  }
+
+  receiveEvent($event){
+    
+    this.index++;
+    this.percentage += ((100/this.inputsList.length)/4);
+    this.currentInput=this.inputsList[this.index];
+
+    console.log(this.percentage)
+    this.AllTheSelectedInputs.push($event);
+    if(this.index == 5){
+      //go to final page
+      localStorage.setItem('inputs', JSON.stringify(this.AllTheSelectedInputs));
+      this.router.navigateByUrl('/continue');
+    }
   }
 
 }
